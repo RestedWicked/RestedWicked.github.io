@@ -42,17 +42,36 @@ header h1{
     padding: 40px;
     position: relative;
     left: 50%;
-    height: 15vh;
+    height: 12ch;
     -o-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     -moz-transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, 20%);
+    transform: translate(-50%, 20%);   
+}
+
+
+.brand{
+    position: relative;
+    font-size: 3ch;
+    text-align: center;
     
 }
 
-.brand{
-    font-size: 3ch;
+/* For Mobile */
+@media screen and (max-width: 540px) {
+    .logo{
+        height: ch;
+        transform: translate(-50%, 2ch); 
+    }
+}
+
+/* For Tablets */
+@media screen and (min-width: 540px) and (max-width: 780px) {
+    .logo{
+        transform: translate(-50%, 2ch); 
+    }
+ 
 }
 
 .geo{
