@@ -1,0 +1,76 @@
+@font-face {
+    font-family: WebFont;
+    src: url(https://cdn.restedwicked.xyz/webfont.ttf);
+}
+
+body {
+    background: #0f0f0f;
+    color: #fff9eb;
+    font-family: WebFont;
+    font-size: 5rem;
+}
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-weight: normal;
+    margin-top: 1em;
+    margin-left: 0.15em;
+    margin-bottom: 0.1em;
+}
+
+h1 span {
+    color: #0fb894;
+}
+
+hr {
+    width: 14em;
+    border: 0.05em solid #fff9eb;
+    margin-top: -3rem;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    font-family: ProFont;
+    font-size: 4rem;
+}
+
+li img {
+    width: 7rem;
+    filter: brightness(0) saturate(100%) invert(95%) sepia(10%) saturate(975%) hue-rotate(307deg) brightness(107%) contrast(102%);
+    margin: 3rem;
+    margin-top: 0;
+}
+
+@media screen and (max-width : 70em) {
+    body {
+        font-size: 3em;
+    }
+    
+    div {
+        flex-direction: column;
+    }
+    
+    h1 {
+        margin-top: 0;
+    }
+    
+    hr {
+        width: 10em;
+        margin-top: -2rem;
+    }
+
+    img {
+        width: 3em;
+    }
+
+    li img {
+        width: 5rem;
+    }
+
+}
